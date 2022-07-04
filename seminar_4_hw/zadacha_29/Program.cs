@@ -1,4 +1,5 @@
-﻿// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. 
+// В первой строчке 5 элементов, во второй строчке 3 элемента
 
 int[] GetArrayRandom(int size)
 {
@@ -12,9 +13,16 @@ int[] GetArrayRandom(int size)
 
 void ShowArray(int[] massiv)
 {
-    foreach (var item in massiv)
+    for (int i = 0; i < 5; i++)
     {
-        Console.Write(item + " ");
+        Console.Write(massiv[i] + " ");
+    }
+        
+        Console.WriteLine();
+
+    for (int i = 5; i < massiv.Length; i++)
+    {
+        Console.Write(massiv[i] + " ");
     }
 }
 
