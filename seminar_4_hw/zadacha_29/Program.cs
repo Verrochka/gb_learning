@@ -1,5 +1,4 @@
-// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. 
-// В первой строчке 5 элементов, во второй строчке 3 элемента
+// Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран. Нужно перейти на новую строку после 5 элемента
 
 int[] GetArrayRandom(int size)
 {
@@ -13,17 +12,14 @@ int[] GetArrayRandom(int size)
 
 void ShowArray(int[] massiv)
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < massiv.Length; i++)
     {
-        Console.Write(massiv[i] + " ");
-    }
-        
+        if (i % 5 == 0)
+        {
         Console.WriteLine();
-
-    for (int i = 5; i < massiv.Length; i++)
-    {
+        }
         Console.Write(massiv[i] + " ");
-    }
+    }  
 }
 
 int[] array = GetArrayRandom(8);
