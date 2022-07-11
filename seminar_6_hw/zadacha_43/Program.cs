@@ -13,11 +13,21 @@ double b2 = double.Parse(Console.ReadLine());
 Console.WriteLine("Введите значение коэффициента k2: ");
 double k2 = double.Parse(Console.ReadLine());
 
-double[] array = {b1, k1, b2, k2};
+if (k2 == k1)
+{
+    Console.WriteLine("Ошибка при вычислении. Введите другой коэффициент k2");
+}
+
+else 
+{
+    double[] array = {b1, k1, b2, k2};
  
-double x = (b1 - b2) / (k2 - k1);
+    double x = (b1 - b2) / (k2 - k1);
 
-double y = k1 * x + b1;
+    double y = k1 * x + b1;
 
-Console.WriteLine($"Точка пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2, равна {x}, {y}");
+    Console.WriteLine($"Точка пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2, равна {x}, {y}");
+}
+
+
 
