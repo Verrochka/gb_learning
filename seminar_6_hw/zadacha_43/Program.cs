@@ -15,7 +15,7 @@ double k2 = double.Parse(Console.ReadLine());
 
 if (k2 == k1)
 {
-    Console.WriteLine("Ошибка при вычислении. Введите другой коэффициент k2");
+    Console.WriteLine("Данные прямые параллельны (нет точек пересечения) или совпадают");
 }
 
 else 
