@@ -1,4 +1,4 @@
-﻿// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 Console.WriteLine("Введите количество строк");
 int m = Int32.Parse(Console.ReadLine());
@@ -20,15 +20,15 @@ for (int i = 0; i < lengthRows; i++)
     }
     Console.WriteLine();
 }
-
+Console.WriteLine();
 for (int j = 0; j < lengthColumns; j++)
 {
-    int sumColumnsNumbers = 0;
+    double sumColumnsNumbers = 0;
     double columnsNumbersAverage = 0;
 
     for (int i = 0; i < lengthRows; i++)
     {
     sumColumnsNumbers = sumColumnsNumbers + matrix[i, j]; 
     }
-    Console.WriteLine($"Среднее арифметическое элементов {j} столбца равно {columnsNumbersAverage = sumColumnsNumbers / lengthColumns}");
+    Console.WriteLine($"Среднее арифметическое элементов {j} столбца равно {Math.Round(columnsNumbersAverage = sumColumnsNumbers / (double)lengthRows, 2)}");
 }
