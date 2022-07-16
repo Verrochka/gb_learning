@@ -16,7 +16,7 @@ for (int i = 0; i < lengthRows; i++)
     for (int j = 0; j < lengthColumns; j++)
     {
         matrix[i, j] = new Random().NextDouble() * 10; // массив вещественных чисел от 0 до 10
-        Console.Write(matrix[i, j] + "\t"); // литерал t - tab. 
+        Console.Write(Math.Round(matrix[i, j], 2) + "\t"); // литерал t - tab. 
     }
     Console.WriteLine(); // Переход на новую строку
 }
